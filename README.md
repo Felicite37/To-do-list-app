@@ -1,18 +1,81 @@
-# React + Vite
+# My To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive to-do list application built with React, Vite, and Tailwind CSS. Features drag-and-drop functionality, local storage persistence, and a clean, responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Add new tasks with a simple form interface
+- 🗑️ Delete tasks with a single click
+- ✔️ Mark tasks as complete/incomplete
+- 🎯 Drag and drop to reorder tasks
+- 💾 Automatic local storage persistence
+- 📱 Responsive design with Tailwind CSS
+- 🎨 Clean UI with Heroicons
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **React 18** - Modern React with hooks
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Beautiful DnD** - Drag and drop functionality
+- **Heroicons** - Beautiful SVG icons
+- **ESLint** - Code linting and formatting
 
-Note: This will impact Vite dev & build performances.
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (version 14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Navigate to the project directory:
+   ```bash
+   cd my-to-dolist
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── AddTask.jsx     # Task input form component
+│   └── TaskList.jsx    # Task list with drag-drop functionality
+├── App.jsx             # Main application component
+├── App.css             # Application styles
+├── index.css           # Global styles
+└── main.jsx            # Application entry point
+```
+
+## How to Use
+
+1. **Add a task**: Type your task in the input field and click the plus button or press Enter
+2. **Complete a task**: Click on the task text to mark it as complete
+3. **Delete a task**: Click the trash icon to remove a task
+4. **Reorder tasks**: Drag and drop tasks to change their order
+5. **Persistence**: Your tasks are automatically saved to local storage
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
